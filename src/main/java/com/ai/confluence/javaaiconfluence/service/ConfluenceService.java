@@ -54,7 +54,7 @@ public class ConfluenceService {
         """, pageTitle, spaceKey, html.replace("\"", "\\\""));
 
         // 3. Send to Confluence
-        String authHeader = "Basic " + "cG9vamEua3VtYXdhdDc1QGdtYWlsLmNvbTpBVEFUVDN4RmZHRjBZbmNNOXpRTEhXWEc2a2VycmZ2R0lYbXpXQkxnTkpRd2hPUEJycEkwS0hhekJGX1VJbEwyelFUT1d6RlFudzhFTFJQdURlWExjdHZWOTRJbXo5UWExMFprMDJvSFVIRzlSRHkwWlRKZVkzSnFSbDZfb0d6NmlUSUlCWkZ4MlhuTkFrMVZZNW9zdEg3b1g4SDRQTnJObXdXeTd3TTlIZXUzUkNqMXI0SmxhY1E9QjgyMzRERkY=";
+        String authHeader = "Basic " + "<confluencetoken>";
 
         WebClient.ResponseSpec response = webClient.post()
                 .uri(confluenceUrl)
